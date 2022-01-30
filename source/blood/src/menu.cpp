@@ -2150,7 +2150,7 @@ void SaveLastMultiplayerConfig(void)
     Write(hFile, &itemNetStart6.m_nFocus, sizeof(itemNetStart6.m_nFocus));
     Write(hFile, &itemNetStart7.m_nFocus, sizeof(itemNetStart7.m_nFocus));
     Write(hFile, &itemNetStart8.at20, sizeof(itemNetStart8.at20));
-    Write(hFile, &itemNetStart9.at20, sizeof(itemNetStart9.at20));
+    Write(hFile, &itemNetStart9.m_nFocus, sizeof(itemNetStart9.m_nFocus));
     Write(hFile, &itemNetStart10.at20, sizeof(itemNetStart10.at20));
     buildvfs_close(hFile);
 }
@@ -2202,7 +2202,7 @@ void LoadLastMultiplayerConfig(void)
     Read(hFile, &itemNetStart6.m_nFocus, sizeof(itemNetStart6.m_nFocus));
     Read(hFile, &itemNetStart7.m_nFocus, sizeof(itemNetStart7.m_nFocus));
     Read(hFile, &itemNetStart8.at20, sizeof(itemNetStart8.at20));
-    Read(hFile, &itemNetStart9.at20, sizeof(itemNetStart9.at20));
+    Read(hFile, &itemNetStart9.m_nFocus, sizeof(itemNetStart9.m_nFocus));
     Read(hFile, &itemNetStart10.at20, sizeof(itemNetStart10.at20));
     buildvfs_close(hFile);
 }
